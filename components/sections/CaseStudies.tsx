@@ -24,7 +24,7 @@ const cases = [
     category: 'Revenue Operations',
   },
   {
-    client: 'Evergreen Wealth Solutions',
+    client: 'Evergreen Wealth Solutions/Debtwyze',
     headline: 'Operational Workflow Optimization',
     metric: 'Systems-Led',
     metricLabel: 'Architecture Overhaul',
@@ -37,10 +37,10 @@ const cases = [
     client: 'Lobster Tavern',
     headline: 'Premium Digital Positioning',
     metric: '67%',
-    metricLabel: 'Increase in Reservations',
+    metricLabel: 'Increase in Reservations and Online Orders',
     color: '#C8A96A',
     tags: ['Local SEO','Reservation Systems','Brand Repositioning','Customer Acquisition'],
-    desc: 'Digital repositioning from a generic listing presence to a premium brand experience that drove a significant increase in direct reservations.',
+    desc: 'Digital repositioning from a generic listing presence to a premium brand experience that drove a significant increase in direct reservations and online orders.',
     category: 'Growth Strategy',
   },
 ]
