@@ -28,10 +28,14 @@ export default function Contact() {
 >
   Download Portfolio PDF
 </a>    
-            <a href="mailto:fmaasdorp@outlook.com"
-              className="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl font-semibold text-[14px] bg-white/[0.05] border border-white/10 text-white hover:bg-white/[0.09] hover:border-white/20 transition-all duration-200">
-              Book Intro Call
-            </a>
+            <a
+  href="https://wa.me/27628976939?text=Hi%20Fouad%2C%20I%27d%20like%20to%20book%20an%20intro%20call%20with%20you."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl font-semibold text-[14px] bg-white/[0.05] border border-white/10 text-white hover:bg-white/[0.09] hover:border-white/20 transition-all duration-200"
+>
+  Book Intro Call
+</a>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
