@@ -39,10 +39,14 @@ export default function Hero() {
               View Case Studies
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </a>
-            <a href="#contact"
-              className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-[14px] bg-white/[0.05] border border-white/10 text-white hover:bg-white/[0.09] hover:border-white/20 transition-all duration-200">
-              Download Portfolio
-            </a>
+            <a
+  href="/Fouad_Maasdorp_Premium_Portfolio_of_Evidence.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-[14px] bg-white/[0.05] border border-white/10 text-white hover:bg-white/[0.09] hover:border-white/20 transition-all duration-200"
+>
+  Download Portfolio
+</a>
           </motion.div>
 
           <motion.div {...fadeUp(0.55)} className="flex items-center gap-6 mt-10 pt-10 border-t border-white/[0.06]">

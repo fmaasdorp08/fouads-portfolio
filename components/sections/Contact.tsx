@@ -20,11 +20,15 @@ export default function Contact() {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 mb-14">
-            <a href="mailto:info@thynkverse.co.za"
-              className="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl font-semibold text-[14px] bg-teal text-[#0B0F14] hover:bg-teal/90 transition-all duration-200 shadow-lg shadow-teal/20">
-              Download Portfolio PDF
-            </a>
-            <a href="mailto:info@thynkverse.co.za"
+            <a
+  href="/Fouad_Maasdorp_Premium_Portfolio_of_Evidence.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl font-semibold text-[14px] bg-teal text-[#0B0F14] hover:bg-teal/90 transition-all duration-200 shadow-lg shadow-teal/20"
+>
+  Download Portfolio PDF
+</a>    
+            <a href="mailto:fmaasdorp@outlook.com"
               className="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl font-semibold text-[14px] bg-white/[0.05] border border-white/10 text-white hover:bg-white/[0.09] hover:border-white/20 transition-all duration-200">
               Book Intro Call
             </a>
@@ -32,7 +36,7 @@ export default function Contact() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
             {[
-              { label: 'Email', value: 'info@thynkverse.co.za' },
+              { label: 'Email', value: 'fmaasdorp@outlook.com' },
               { label: 'Location', value: 'Cape Town, South Africa' },
               { label: 'Availability', value: 'Remote · Global' },
             ].map(item => (
