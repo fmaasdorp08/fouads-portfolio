@@ -81,3 +81,79 @@ body {
 
 .flow-line { animation: flowLine 2.4s ease-in-out infinite; }
 .pulse-glow { animation: pulseGlow 2.4s ease-in-out infinite; }
+
+.animated-page-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(43, 179, 177, 0.10), transparent 28%),
+    radial-gradient(circle at 80% 30%, rgba(200, 169, 106, 0.08), transparent 26%),
+    radial-gradient(circle at 50% 80%, rgba(43, 179, 177, 0.07), transparent 30%),
+    #0B0F14;
+}
+
+.animated-page-bg::before {
+  content: "";
+  position: absolute;
+  inset: -30%;
+  background:
+    linear-gradient(rgba(43,179,177,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(43,179,177,0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  animation: backgroundDrift 36s linear infinite;
+  opacity: 0.9;
+}
+
+.animated-page-bg::after {
+  content: "";
+  position: absolute;
+  width: 80vw;
+  height: 80vw;
+  left: 10%;
+  top: 10%;
+  background: radial-gradient(circle, rgba(43,179,177,0.10), transparent 55%);
+  filter: blur(90px);
+  animation: ambientOrb 24s ease-in-out infinite alternate;
+  opacity: 0.65;
+}
+
+@keyframes backgroundDrift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-72px, -72px, 0);
+  }
+}
+
+@keyframes ambientOrb {
+  0% {
+    transform: translate3d(-6%, -4%, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(8%, 5%, 0) scale(1.08);
+  }
+  100% {
+    transform: translate3d(-2%, 8%, 0) scale(0.96);
+  }
+}
+
+@keyframes techMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: techMarquee 28s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
