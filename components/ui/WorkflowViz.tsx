@@ -34,7 +34,10 @@ export default function WorkflowViz() {
             >
               {/* Line connector */}
               {i > 0 && (
-                <div className="absolute left-[39px]" style={{ top: `calc(${(i-0.5) / nodes.length * 100}% + 28px)` }}>
+                <div
+  className="absolute left-[35px] opacity-60"
+  style={{ top: `calc(${(i - 0.5) / nodes.length * 100}% + 30px)` }}
+>
                   <svg width="2" height="28" viewBox="0 0 2 28">
                     <motion.line x1="1" y1="0" x2="1" y2="28"
                       stroke={n.color} strokeWidth="1.5" strokeDasharray="28" strokeDashoffset="28"
