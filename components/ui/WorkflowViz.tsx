@@ -34,19 +34,11 @@ export default function WorkflowViz() {
             >
               {/* Line connector */}
               {i > 0 && (
-                <div
-  className="absolute left-[35px] opacity-60"
-  style={{ top: `calc(${(i - 0.5) / nodes.length * 100}% + 30px)` }}
->
-                  <svg width="2" height="28" viewBox="0 0 2 28">
-                    <motion.line x1="1" y1="0" x2="1" y2="28"
-                      stroke={n.color} strokeWidth="1.5" strokeDasharray="28" strokeDashoffset="28"
-                      animate={{ strokeDashoffset: 0 }}
-                      transition={{ delay: 0.8 + i * 0.15, duration: 0.4 }}
-                    />
-                  </svg>
-                </div>
-              )}
+  <div
+    className="absolute left-3 top-[-28px] h-[28px] w-px opacity-60"
+    style={{ background: `linear-gradient(to bottom, ${n.color}55, ${n.color})` }}
+  />
+)}
               <div className="w-6 h-6 rounded-md flex items-center justify-center shrink-0"
                 style={{ background: `${n.color}18`, border: `1px solid ${n.color}40` }}>
                 <div className="w-1.5 h-1.5 rounded-full" style={{ background: n.color }} />
