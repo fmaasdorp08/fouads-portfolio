@@ -21,7 +21,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-bg text-slate-100 antialiased overflow-x-hidden">
   <div className="animated-page-bg" />
-  {children}
+  <div className="relative z-10">
+    {children}
+  </div>
 </body>
     </html>
   )
