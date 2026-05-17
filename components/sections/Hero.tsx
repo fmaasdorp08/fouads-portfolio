@@ -37,13 +37,13 @@ export default function Hero() {
             <a href="#cases"
               className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-[14px] bg-teal text-[#0B0F14] hover:bg-teal/90 transition-all duration-200 shadow-lg shadow-teal/20">
               View Case Studies
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </a>
             <a
   href="/Fouad_Maasdorp_Premium_Portfolio_of_Evidence.pdf"
   target="_blank"
   rel="noopener noreferrer"
-  className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-[14px] bg-white/[0.05] border border-white/10 text-white hover:bg-white/[0.09] hover:border-white/20 transition-all duration-200"
+  className="group inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-[14px] bg-teal text-[#0B0F14] hover:bg-teal/90 transition-all duration-200 shadow-lg shadow-teal/20 hover:-translate-y-0.5"
 >
   Download Portfolio
 </a>
@@ -60,11 +60,19 @@ export default function Hero() {
         </div>
 
         {/* Right */}
-        <motion.div initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="hidden lg:flex justify-center">
-          <WorkflowViz />
-        </motion.div>
+        <motion.div
+  initial={{ opacity: 0, x: 40 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+  className="hidden lg:flex justify-center"
+>
+  <motion.div
+    animate={{ y: [0, -10, 0] }}
+    transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+  >
+    <WorkflowViz />
+  </motion.div>
+</motion.div>
       </div>
     </section>
   )

@@ -68,8 +68,8 @@ export default function CaseStudies() {
               initial={{ opacity: 0, y: 28 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: i * 0.1, duration: 0.7, ease: [0.22,1,0.36,1] }}
-              whileHover={{ y: -4 }}
-              className="surface-card rounded-3xl p-7 group transition-all duration-300 hover:border-white/10 cursor-default"
+              whileHover={{ y: -6, scale: 1.015 }}
+              className="surface-card rounded-3xl p-7 group transition-all duration-500 hover:border-teal/20 hover:shadow-2xl hover:shadow-teal/5 cursor-default"
             >
               <div className="flex items-start justify-between gap-4 mb-6">
                 <div>
