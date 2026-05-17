@@ -26,8 +26,8 @@ const cases = [
   {
     client: 'Evergreen Wealth Solutions/Debtwyze',
     headline: 'Operational Workflow Optimization',
-    metric: 'Systems-Led',
-    metricLabel: 'Architecture Overhaul',
+    metric: 'Ops',
+    metricLabel: 'Workflow Architecture',
     color: '#2BB3B1',
     tags: ['Lead Management','Operational Redesign','CRM Logic','WhatsApp Integration','Routing'],
     desc: 'Full redesign of lead management architecture, communication routing, and CRM workflow logic, including WhatsApp integration strategy for faster response times.',
@@ -37,7 +37,7 @@ const cases = [
     client: 'Lobster Tavern',
     headline: 'Premium Digital Positioning',
     metric: '67%',
-    metricLabel: 'Increase in Reservations and Online Orders',
+    metricLabel: 'Reservations + Orders',
     color: '#C8A96A',
     tags: ['Local SEO','Reservation Systems','Brand Repositioning','Customer Acquisition'],
     desc: 'Digital repositioning from a generic listing presence to a premium brand experience that drove a significant increase in direct reservations and online orders.',
@@ -71,15 +71,15 @@ export default function CaseStudies() {
               whileHover={{ y: -6, scale: 1.015 }}
               className="surface-card rounded-3xl p-7 group transition-all duration-500 hover:border-teal/20 hover:shadow-2xl hover:shadow-teal/5 cursor-default"
             >
-              <div className="flex items-start justify-between gap-4 mb-6">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
                 <div>
                   <span className="text-[10px] font-semibold tracking-[0.16em] uppercase mb-2 block" style={{ color: c.color }}>{c.category}</span>
                   <h3 className="text-[20px] font-bold text-white leading-tight">{c.headline}</h3>
                   <p className="text-[13px] text-slate-500 mt-1">{c.client}</p>
                 </div>
-                <div className="text-right shrink-0">
-                  <p className="text-3xl font-bold" style={{ color: c.color }}>{c.metric}</p>
-                  <p className="text-[11px] text-slate-500 mt-0.5">{c.metricLabel}</p>
+                <div className="text-left sm:text-right shrink-0 max-w-full">
+                  <p className="text-2xl sm:text-3xl font-bold break-words" style={{ color: c.color }}>{c.metric}</p>
+                  <p className="text-[11px] text-slate-500 mt-0.5 max-w-[220px] sm:max-w-none">{c.metricLabel}</p>
                 </div>
               </div>
               <p className="text-[14px] text-slate-400 leading-relaxed mb-6">{c.desc}</p>
